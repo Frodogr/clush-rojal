@@ -1,5 +1,6 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile4`, function (sprite, location) {
     game.over(true, effects.confetti)
+    game.over(false, effects.dissolve)
 })
 game.splash("LABERYNTH OF CASTLE")
 let mySprite = sprites.create(img`
